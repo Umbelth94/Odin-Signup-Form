@@ -15,15 +15,43 @@
         <li>Structure the HTML file by setting up the proper inputs and forms.</li>
         <li>Find a background image and logo to use</li>
     </ol> -->
+    <!-- <img src="./images/wallpaperflare-cropped.jpg" alt="A planet exploding" id="planet"> -->
     <div class="main-body">
         <div class='picture-side'>
-            <!--Insert logo here-->
-            
+            <div class="image-placeholder">s</div>
         </div>
         <div class='form-side'>
             <h3>This is a bunch of text to represent a saying or phrase that will entice everyone to use this website.  Isn't it really convincing?</h3>
             <h3>Hell yeah, it really is.</h3>
             <!--Form Side-->
+            <form id="signup-form">
+                <div class="inputdiv">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="first-name" value="poopie" required>
+                </div>
+                <div class="inputdiv">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="last-name" value="noopers" required>
+                </div>
+                <div class="inputdiv">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="example@website.org">
+                </div>
+                <div class="inputdiv">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="inputdiv">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="inputdiv">
+                    <label for="password-confirm">Confirm Password</label>
+                    <input type="password" id="password-confirm" name="password-confirm" required>
+                </div>
+            </form>
+            <button type="submit">Create Account</button>
+            <p>Already have an account?  <a href="url">Sign in!</a></p>
         </div>
     </div>
 

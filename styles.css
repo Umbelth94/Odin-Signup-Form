@@ -1,16 +1,23 @@
 *{
     box-sizing:border-box;
+    color:black;
 }
 
 body{
     display:flex;
-    background-color:rgb(5, 5, 63);
 }
 
 .main-body{
     display:flex;
-    width:70%;
-    background-color:bisque;
+    width:95%;
+    height:100%;
     margin-left:auto;
     margin-right:auto;
+}
+
+.image-placeholder{
+    background:darkblue;
+    border:1px solid black;
+    width:500px;
+    height:100%;
 }
