@@ -9,15 +9,29 @@ body{
 
 .main-body{
     display:flex;
-    width:95%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     margin-left:auto;
     margin-right:auto;
 }
 
+
+/*Left Side */
 .image-placeholder{
     background:darkblue;
     border:1px solid black;
-    width:500px;
-    height:100%;
+    width:30vw;
+    height:100vh;
+}
+
+/*Right Side*/
+.form-side{
+    display:flex;
+    flex-flow:wrap;
+    width:70vw;
+}
+
+form{
+    display:flex;
+    flex-flow:wrap;
 }
