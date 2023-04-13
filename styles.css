@@ -1,9 +1,12 @@
 *{
     box-sizing:border-box;
-    color:black;
+    color:rgb(31, 30, 30);
+    margin:0px;
+    padding: 0px;
 }
 
-body{
+body,
+.picture-side{
     display:flex;
 }
 
@@ -11,27 +14,56 @@ body{
     display:flex;
     width:100vw;
     height:100vh;
-    margin-left:auto;
-    margin-right:auto;
 }
+
+
 
 
 /*Left Side */
 .image-placeholder{
-    background:darkblue;
+    background-image:url('./images/wallpaperflare-cropped.jpg');
+    background-position:center;
+    background-size:auto;
     border:1px solid black;
-    width:30vw;
-    height:100vh;
+    width:32vw;
+}
+
+.logo{
+    display:flex;
+    flex-flow:row wrap;
+    position:relative;
+    height:auto;
+    top:20vh;
+    gap: 1vw;
+    justify-content:center;
+    align-items:center;
 }
 
 /*Right Side*/
 .form-side{
     display:flex;
-    flex-flow:wrap;
-    width:70vw;
+    flex-flow:column wrap;
+    width:68vw;
+    justify-content:center;
 }
 
 form{
     display:flex;
-    flex-flow:wrap;
+    flex-flow:row wrap;
+    background-color:rgb(181, 183, 187);
+    justify-content:center;
+    gap:5%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.inputdiv{
+    display:flex;
+    flex-flow:column wrap;
+    width: 40%;
+    font-size:1.2rem;
+}
+
+button{
+    margin-top:20px;
 }
