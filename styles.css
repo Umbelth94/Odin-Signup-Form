@@ -16,6 +16,14 @@ body,
     height:100vh;
 }
 
+input,
+label,
+button{
+    font-size:inherit;
+    appearance:none;
+}
+
+
 
 
 
@@ -23,9 +31,9 @@ body,
 .planet{
     background-image:url('./images/wallpaperflare-cropped.jpg');
     background-position:center;
-    background-size:auto;
+    /* background-size:auto; */
     border:1px solid black;
-    width:32vw;
+    width:30vw;
 }
 
 .logo{
@@ -39,30 +47,47 @@ body,
 }
 
 /*Right Side*/
+
+h2{
+    margin-bottom: 50px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
 .form-side{
     display:flex;
     flex-flow:column wrap;
-    width:68vw;
+    width:70vw;
     justify-content:center;
 }
 
 form{
+    position:relative;
     display:flex;
     flex-flow:row wrap;
     background-color:rgb(181, 183, 187);
-    justify-content:center;
-    gap:5%;
-    padding-top:20px;
-    padding-bottom:20px;
+    /* justify-content:center; */
+    gap: 8%;
+    padding: 40px 0 60px 40px;
 }
 
 .inputdiv{
     display:flex;
     flex-flow:column wrap;
-    width: 40%;
-    font-size:1.2rem;
+    width: 30%;
+    font-size:1.1rem;
 }
 
 button{
     margin-top:20px;
+}
+
+input{
+    border:none;
+    border-bottom:2px solid rgb(74, 72, 72);
+    border-left:2px solid rgb(74, 72, 72);
+}
+
+label{
+  text-decoration:underline;
 }
