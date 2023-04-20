@@ -1,3 +1,7 @@
+:root{
+    --general-font-color: color:rgb(156, 11, 11);
+}
+
 *{
     background-color:rgb(33, 32, 35);
     box-sizing:border-box;
@@ -80,10 +84,12 @@ form{
     /* justify-content:center; */
     gap: 8%;
     padding: 40px 0 60px 40px;
-    filter:drop-shadow(0px 0px 40px red);
-    border-top:2px solid rgb(112, 0, 0);
-    border-bottom:2px solid rgb(112, 0, 0);
-    border-left:2px solid rgb(112, 0, 0);
+    transition: filter .3s ease-out;
+    
+}
+
+form:hover{
+    filter:drop-shadow(0px 0px 30px red);
 }
 
 .inputdiv{
