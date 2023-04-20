@@ -1,6 +1,8 @@
 :root{
     --general-font-color: color:rgb(156, 11, 11);
+    --form-background:color:rgb(35, 28, 27);
 }
+
 
 *{
     background-color:rgb(33, 32, 35);
@@ -79,18 +81,35 @@ h2{
 form{
     position:relative;
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:column wrap;
     background-color:rgb(35, 28, 27);
     /* justify-content:center; */
-    gap: 8%;
+    /* gap: 8%; */
     padding: 40px 0 60px 40px;
     transition: filter .3s ease-out;
-    
+}
+
+form .inputs-container{
+    display:flex;
+    flex-flow:row wrap;
+    gap: 8%;
 }
 
 form:hover{
     filter:drop-shadow(0px 0px 30px red);
 }
+
+form h2,
+.inputs-container,
+input{
+    background-color:var(--form-background);
+}
+
+form h2{
+    margin-left:-40px;
+}
+
+
 
 .inputdiv{
     display:flex;
@@ -107,8 +126,12 @@ input{
     border:none;
     border-bottom:2px solid rgb(74, 72, 72);
     border-left:2px solid rgb(74, 72, 72);
+    
+    /* This background color won't work as a variable for whatever reason */
+    background-color:rgb(35, 28, 27);
 }
 
 label{
   text-decoration:underline;
+  background-color:rgb(35, 28, 27);
 }

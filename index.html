@@ -10,7 +10,8 @@
 <body>
     <!-- To Do List:
         -Create a second section for the form that includes fun planet destroying related options, including a checkbox or radio list.
-        -Stylize the inputs.  
+        -Stylize the inputs. 
+            --Get their background colors to work 
             --Space them out, provide a background, make a better looking option for when they are selected.
         -Find a better font?
         -Come up with a better slogan/Intro paragraph
@@ -28,36 +29,40 @@
                 </div>
             </div>
         </div>
+        <!-- Right Side -->
         <div class='form-side'>
-            <!--Form Side-->
+            
             <div class="description-container">
                 <h2>Life as an intergalactic dictator is <em>stressful</em>.  Trust us, we get it.  Often times it seems like the entire universe is out to get you, and sometimes it actually is. Big problems like that can often be solved with simple, heavy handed solutions that only the greatest among us dare to even dream of.  Do you consider yourself among them? Think nobly, act globally. </h2>
-                <h2>Sign up now and make all of your planetary problems... <em>disappear</em></h2>
+                <h2>You could make all of your planetary problems... <em>disappear</em></h2>
             </div>
             <form id="signup-form">
-                <div class="inputdiv">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="full-name" required>
-                </div>
-                <div class="inputdiv">
-                    <label for="empirename">Empire/Federation Name</label>
-                    <input type="text" id="empirename" name="empire-name" required>
-                </div>
-                <div class="inputdiv">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="inputdiv">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="inputdiv">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="inputdiv">
-                    <label for="password-confirm">Confirm Password</label>
-                    <input type="password" id="password-confirm" name="password-confirm" required>
+                <h2>Sign up now...  Total Victory awaits!</h2>
+                <div class="inputs-container">
+                    <div class="inputdiv">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="full-name" required>
+                    </div>
+                    <div class="inputdiv">
+                        <label for="empirename">Empire/Federation Name</label>
+                        <input type="text" id="empirename" name="empire-name" required>
+                    </div>
+                    <div class="inputdiv">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="inputdiv">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="inputdiv">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="inputdiv">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                    </div>
                 </div>
             </form>
             <button type="submit">Create Account</button>
