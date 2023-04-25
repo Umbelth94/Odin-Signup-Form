@@ -116,6 +116,8 @@ form h2{
     flex-flow:column wrap;
     width: 30%;
     font-size:1.1rem;
+    background-color:var(--form-background);
+    margin-bottom:20px;
 }
 
 button{
@@ -123,6 +125,7 @@ button{
 }
 
 input{
+    
     border:none;
     border-bottom:2px solid rgb(74, 72, 72);
     border-left:2px solid rgb(74, 72, 72);
@@ -134,4 +137,5 @@ input{
 label{
   text-decoration:underline;
   background-color:rgb(35, 28, 27);
+  margin-bottom:5px;
 }
