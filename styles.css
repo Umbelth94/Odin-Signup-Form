@@ -140,7 +140,14 @@ input{
     border-left:2px solid rgb(81, 14, 14);
     
     /* This background color won't work as a variable for whatever reason */
-    background-color:rgb(20, 20, 20);;
+    background-color:rgb(20, 20, 20);
+
+    transition: width .3s, height .3s;
+}
+
+input:focus{
+    border:2px solid rgb(81, 14, 14);
+    outline:none;
 }
 
 label{
