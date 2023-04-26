@@ -53,10 +53,11 @@ button{
 
 .logo h1{
     background:none;
+    color:rgb(168, 3, 3);
 }
 
 .logo{
-    background-color:rgba(23, 22, 22, 0.312);
+    background-color:rgba(23, 22, 22, 0.34);
     display:flex;
     flex-flow:row wrap;
     position:relative;
@@ -144,6 +145,7 @@ input{
     border:none;
     border-bottom:2px solid rgb(81, 14, 14);
     border-left:2px solid rgb(81, 14, 14);
+    padding-left:5px;
     
     /* these borders are there for sizing but are effectively invisible. */
     border-top:2px solid rgb(20, 20, 20);
@@ -156,7 +158,10 @@ input{
 }
 
 input:focus{
-    border:2px solid rgb(155, 2, 2);
+    border: 3px solid rgb(155, 2, 2);
+    border-radius:7px;
+    padding-left:5px;
+
     outline:none;
 }
 
