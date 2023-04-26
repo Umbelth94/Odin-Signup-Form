@@ -139,6 +139,10 @@ input{
     border-bottom:2px solid rgb(81, 14, 14);
     border-left:2px solid rgb(81, 14, 14);
     
+    /* these borders are there for sizing but are effectively invisible. */
+    border-top:2px solid rgb(20, 20, 20);
+    border-right:2px solid rgb(20, 20, 20);
+
     /* This background color won't work as a variable for whatever reason */
     background-color:rgb(20, 20, 20);
 
