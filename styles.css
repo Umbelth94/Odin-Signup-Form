@@ -146,8 +146,22 @@ input{
 }
 
 input:focus{
-    border:2px solid rgb(81, 14, 14);
+    border:2px solid rgb(155, 2, 2);
     outline:none;
+}
+
+input + span {
+    /* makes setting the required fields easier */
+    position: relative;
+}
+
+input:required + span::after{
+    position: absolute;
+    content:"*";
+    color: var(--general-font-color);
+    font-size:30px;
+    bottom:-10px;
+    right:5px;
 }
 
 label{

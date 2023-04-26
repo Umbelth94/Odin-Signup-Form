@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deathst'R'Us </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- To Do List:
-        -Create a second section for the form that includes fun planet destroying related options, including a checkbox or radio list.
+        -Add required effect, or something to indicate that certain inputs are necessary
         -Stylize the inputs. 
-            --Get their background colors to work as variables? (optional)
-            --Space them out, provide a background, make a better looking option for when they are selected.
-        -Find a better font?
-        -Come up with a better slogan/Intro paragraph
-        -Stylize Button
         -Add my for real contact info at the bottom of the page.
 
      -->
@@ -42,10 +40,12 @@
                     <div class="inputdiv">
                         <label for="fullname">Full Name</label>
                         <input type="text" id="fullname" name="full-name" required>
+                        <span></span>
                     </div>
                     <div class="inputdiv">
                         <label for="empirename">Empire/Federation Name</label>
                         <input type="text" id="empirename" name="empire-name" required>
+                        <span></span>
                     </div>
                     <div class="inputdiv">
                         <label for="email">Email</label>
@@ -58,10 +58,12 @@
                     <div class="inputdiv">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required>
+                        <span></span>
                     </div>
                     <div class="inputdiv">
                         <label for="password-confirm">Confirm Password</label>
                         <input type="password" id="password-confirm" name="password-confirm" required>
+                        <span></span>
                     </div>
                 </div>
             </form>
