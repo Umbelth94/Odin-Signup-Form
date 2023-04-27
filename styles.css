@@ -78,7 +78,6 @@ h2{
 h5{
     margin-top:-30px;
     margin-bottom:35px;
-    background-color:rgb(20,20,20);
 }
 
 .form-side{
@@ -97,7 +96,6 @@ h5{
     position:relative;
     display:flex;
     flex-flow:column wrap;
-    background-color:rgb(20, 20, 20);
     /* justify-content:center; */
     /* gap: 8%; */
     padding: 40px 0 50px 40px;
@@ -151,7 +149,6 @@ input{
     border-right:2px solid rgb(20, 20, 20);
 
     /* This background color won't work as a variable for whatever reason */
-    background-color:rgb(20, 20, 20);
 
     transition: width .3s, height .3s;
 }
@@ -182,7 +179,6 @@ label{
   text-decoration:underline;
   font-weight:bold;
   color:#fff7f78d;
-  background-color:rgb(20, 20, 20);;
   margin-bottom:5px;
 }
 
@@ -195,7 +191,6 @@ button{
 
     color:#fff7f78d;
     font-size:20px;
-    background-color:rgb(35, 28, 27);
 
     border:3px solid rgb(81,14,14);
     border-radius:15px;
@@ -208,3 +203,24 @@ button,
     color:#fff7f78d;
 }
 
+textarea{
+    border:2px solid rgb(81, 14, 14);
+    resize:none;
+    padding:3px 5px 3px 5px;
+    font-size:inherit;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+/* Take all of the form selectors with the same background and make them one thingy  */
+#signup-form,
+h5,
+input,
+button,
+textarea,
+label,
+.instructions{
+    background-color:rgb(20,20,20);
+}
