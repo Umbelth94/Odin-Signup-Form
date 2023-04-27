@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,14 @@
 </head>
 <body>
     <!-- To Do List:
-        -Add required effect, or something to indicate that certain inputs are necessary
+        -Custom input prompt text.  
         -Stylize the inputs. 
         -Add my for real contact info at the bottom of the page.
         -Add button click animation
         -Need a way to indicate a field has valid input.
+        -Add a radio button for a donation :)
+        -Add a dropdown menu for planet size
+        -Stylize textarea and subtext.
 
      -->
     <!-- <img src="./images/wallpaperflare-cropped.jpg" alt="A planet exploding" id="planet"> -->
@@ -36,41 +39,49 @@
                 <h2>Life as an intergalactic dictator is <em>stressful</em>.  Trust us, we get it.  Often times it seems like the entire universe is out to get you, and sometimes it actually is.  We have just the thing to help.   </h2>
                 <h2>Fill out this form and make all of your planetary problems... <em>disappear</em></h2>
             </div>
-            <form id="signup-form">
-                <h2>Sign up now...  Total Victory awaits!</h2>
-                <h5>Fields marked with * are required</h5>
-                <div class="inputs-container">
-                    <div class="inputdiv">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="full-name" required>
-                        <span></span>
+            <form>
+                <div id="signup-form">
+                    <h2>Sign up now...  Total Victory awaits!</h2>
+                    <h5>Fields marked with <span class="asterisk">*</span> are required</h5>
+                    <div class="inputs-container">
+                        <div class="inputdiv">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="full-name" required>
+                            <span></span>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="empirename">Empire/Federation Name</label>
+                            <input type="text" id="empirename" name="empire-name" required>
+                            <span></span>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="inputdiv">
+                            <label for="coords">Empire Coordinates</label>
+                            <input type="tel" id="coords" name="coords">
+                        </div>
+                        <div class="inputdiv">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                            <span></span>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="password-confirm">Confirm Password</label>
+                            <input type="password" id="password-confirm" name="password-confirm" required>
+                            <span></span>
+                        </div>
                     </div>
                     <div class="inputdiv">
-                        <label for="empirename">Empire/Federation Name</label>
-                        <input type="text" id="empirename" name="empire-name" required>
-                        <span></span>
-                    </div>
-                    <div class="inputdiv">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="inputdiv">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="inputdiv">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                        <span></span>
-                    </div>
-                    <div class="inputdiv">
-                        <label for="password-confirm">Confirm Password</label>
-                        <input type="password" id="password-confirm" name="password-confirm" required>
-                        <span></span>
+                        <label for="reason">Reason:</label>
+                        <textarea name="reason" id="abstract" cols="50" rows="8"></textarea>
+                        <div class="instructions">Why do they deserve it?  (In 500 characters or less)</div>
                     </div>
                 </div>
+                <button type="submit">Create Account</button>
+
             </form>
-            <button type="submit">Create Account</button>
             <p>Already have an account?  <a href="url">Sign in!</a></p>
         </div>
     </div>

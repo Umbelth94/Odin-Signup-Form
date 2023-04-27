@@ -27,8 +27,7 @@ body,
 }
 
 input,
-label,
-button{
+label{
     font-size:inherit;
     appearance:none;
 }
@@ -92,7 +91,7 @@ h5{
     justify-content:center;
 }
 
-form{
+#signup-form{
     margin-left: -40px;
     margin-right: -120px;
     position:relative;
@@ -111,7 +110,7 @@ form .inputs-container{
     gap: 8%;
 }
 
-form:hover{
+#signup-form:hover{
     filter:drop-shadow(0px 0px 25px red);
 }
 
@@ -173,7 +172,7 @@ input + span {
 input:required + span::after{
     position: absolute;
     content:"*";
-    color: var(--general-font-color);
+    color: #fff7f78d;
     font-size:30px;
     bottom:-10px;
     right:5px;
@@ -181,6 +180,8 @@ input:required + span::after{
 
 label{
   text-decoration:underline;
+  font-weight:bold;
+  color:#fff7f78d;
   background-color:rgb(20, 20, 20);;
   margin-bottom:5px;
 }
@@ -192,10 +193,18 @@ button{
     width:275px;
     height:50px;
 
+    color:#fff7f78d;
     font-size:20px;
     background-color:rgb(35, 28, 27);
 
     border:3px solid rgb(81,14,14);
     border-radius:15px;
+}
+
+a,
+label,
+button,
+.asterisk{
+    color:#fff7f78d;
 }
 
