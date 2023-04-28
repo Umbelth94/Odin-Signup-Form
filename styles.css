@@ -61,7 +61,7 @@ label{
     display:flex;
     flex-flow:row wrap;
     position:relative;
-    height:auto;
+    /* height:auto; */
     top:40vh;
     justify-content:center;
     align-items:center;
@@ -179,6 +179,7 @@ input:required + span::after{
     right:5px;
 }
 
+
 label{
   text-decoration:underline;
   font-weight:bold;
@@ -216,6 +217,12 @@ textarea{
 
 textarea:focus{
     outline:none;
+    border:3px solid rgb(155, 2, 2);
+    border-radius:7px;
+}
+
+.instructions{
+    font-size:14px;
 }
 
 /* Take all of the form selectors with the same background and make them one thingy  */
