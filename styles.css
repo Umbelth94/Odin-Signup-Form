@@ -21,16 +21,10 @@ body,
     /* flex-flow: row wrap; */
 }
 
-/* body{
-    height:100vh;
-    width:100vw;
-} */
+
 
 .main-body{
     display:flex;
-    width: 100vw;
-    height: 100vh;
-    /* maybe start here with the viewheight and width being all wonky?  */
 }
 
 input,
@@ -47,7 +41,7 @@ label{
 .planet{
     background-image:url('./images/wallpaperflare-cropped.jpg');
     background-position:center;
-    /* background-size:auto; */
+    background-size:auto;
     border:1px solid black;
     width:40vw;
 }
@@ -94,7 +88,8 @@ h5{
     margin-right: 120px;
 
     display:flex;
-    flex-flow:column;
+    flex-direction:column;
+    /* wrap:nowrap; */
     width:60vw;
     justify-content:center;
 }
