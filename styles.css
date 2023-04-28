@@ -28,7 +28,8 @@ body,
 }
 
 input,
-label{
+label,
+select{
     font-size:inherit;
     appearance:none;
 }
@@ -122,11 +123,6 @@ input{
     background-color:var(--form-background);
 }
 
-form h2{
-    /* margin-left:-40px; */
-}
-
-
 
 .inputdiv{
     display:flex;
@@ -141,7 +137,8 @@ button{
     margin-top:25px;
 }
 
-input{
+input,
+select{
     
     border:none;
     border-bottom:2px solid rgb(81, 14, 14);
@@ -151,13 +148,14 @@ input{
     /* these borders are there for sizing but are effectively invisible. */
     border-top:2px solid rgb(20, 20, 20);
     border-right:2px solid rgb(20, 20, 20);
-
-    /* This background color won't work as a variable for whatever reason */
-
+}
+input{
     transition: width .3s, height .3s;
 }
 
-input:focus{
+input:focus,
+select:focus,
+textarea:focus{
     border: 3px solid rgb(155, 2, 2);
     border-radius:7px;
     padding-left:5px;
@@ -211,6 +209,7 @@ button,
 .bottom-form{
     display:flex;
     flex-direction:row;
+    gap:8%;
 }
 
 textarea{
@@ -219,15 +218,19 @@ textarea{
     padding:3px 5px 3px 5px;
     font-size:inherit;
 }
-
+/* 
 textarea:focus{
     outline:none;
     border:3px solid rgb(155, 2, 2);
     border-radius:7px;
-}
+} */
 
 .instructions{
     font-size:14px;
+}
+
+select{
+    padding-left:5px;
 }
 
 /* Take all of the form selectors with the same background and make them one thingy  */
@@ -237,6 +240,8 @@ input,
 button,
 textarea,
 label,
-.instructions{
+.instructions,
+select,
+.bottom-form{
     background-color:rgb(20,20,20);
 }
