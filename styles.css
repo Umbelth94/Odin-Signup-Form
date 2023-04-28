@@ -29,6 +29,7 @@ body,
 .main-body{
     display:flex;
     width: 100vw;
+    height: 100vh;
     /* maybe start here with the viewheight and width being all wonky?  */
 }
 
