@@ -18,12 +18,17 @@
 body,
 .picture-side{
     display:flex;
+    /* flex-flow: row wrap; */
+}
+
+body{
+    /* height:100vh; */
+    width:100vw;
 }
 
 .main-body{
     display:flex;
-    width:100vw;
-    height:100vh;
+    /* maybe start here with the viewheight and width being all wonky?  */
 }
 
 input,
@@ -81,11 +86,13 @@ h5{
 }
 
 .form-side{
+    margin-top:3%;
+    margin-bottom:3%;
     margin-left: 40px;
     margin-right: 120px;
 
     display:flex;
-    flex-flow:column wrap;
+    flex-flow:column;
     width:60vw;
     justify-content:center;
 }
