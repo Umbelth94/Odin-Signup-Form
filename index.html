@@ -20,6 +20,7 @@
         -Add a radio button for a donation :)
         -Add a dropdown menu for planet size
         -Stylize textarea and subtext.
+        -Take a stab at client side form validation for passwords and empire coordinates.  
 
      -->
     <!-- <img src="./images/wallpaperflare-cropped.jpg" alt="A planet exploding" id="planet"> -->
@@ -58,9 +59,10 @@
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email">
                         </div>
+                        <!-- Try out a custom validation for this one??   -->
                         <div class="inputdiv">
                             <label for="coords">Empire Coordinates</label>
-                            <input type="tel" id="coords" name="coords">
+                            <input type="text" id="coords" name="coords" placeholder="234X-303Y">
                         </div>
                         <div class="inputdiv">
                             <label for="password">Password</label>
@@ -73,10 +75,21 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="inputdiv">
-                        <label for="reason">Reason:</label>
-                        <textarea name="reason" id="abstract" cols="40" rows="5" maxlength="500"></textarea>
-                        <div class="instructions">Why do they deserve it?  (In 500 characters or less)</div>
+                    <div class="bottom-form">
+                        <div class="inputdiv">
+                            <label for="reason">Reason:</label>
+                            <textarea name="reason" id="abstract" cols="40" rows="5" maxlength="500"></textarea>
+                            <div class="instructions">Why do they deserve it?  (In 500 characters or less)</div>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="planet-size">Planet Size</label>
+                            <select name="planet-size" id="planet-size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">Extra Large</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>

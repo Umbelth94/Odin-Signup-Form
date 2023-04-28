@@ -208,6 +208,11 @@ button,
     color:#fff7f78d;
 }
 
+.bottom-form{
+    display:flex;
+    flex-direction:row;
+}
+
 textarea{
     border:2px solid rgb(81, 14, 14);
     resize:none;
