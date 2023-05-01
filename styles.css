@@ -177,6 +177,10 @@ input:required + span::after{
     right:5px;
 }
 
+input:valid{
+    border:2px solid green;
+}
+
 
 label{
   text-decoration:underline;

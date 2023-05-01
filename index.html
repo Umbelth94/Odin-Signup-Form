@@ -13,13 +13,9 @@
 <body>
     <!-- To Do List:
         -Custom input prompt text.  
-        -Stylize the inputs. 
         -Add my for real contact info at the bottom of the page.
-        -Add button click animation
         -Need a way to indicate a field has valid input.
         -Add a radio button for a donation :)
-        -Add a dropdown menu for planet size
-        -Stylize textarea and subtext.
         -Take a stab at client side form validation for passwords and empire coordinates.  
 
      -->
@@ -65,13 +61,13 @@
                             <input type="text" id="coords" name="coords" placeholder="234X-303Y">
                         </div>
                         <div class="inputdiv">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required>
+                            <label for="password1">Password</label>
+                            <input type="password" id="password1" name="password1" min='8' required>
                             <span></span>
                         </div>
                         <div class="inputdiv">
-                            <label for="password-confirm">Confirm Password</label>
-                            <input type="password" id="password-confirm" name="password-confirm" required>
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="password2" name="password2" min='8' required>
                             <span></span>
                         </div>
                     </div>
@@ -92,14 +88,41 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
+                <button type="submit" onclick="checkPasswords()">Create Account</button>
 
             </form>
             <p>Already have an account?  <a href="url">Sign in!</a></p>
         </div>
     </div>
 
+<script>
+    let pass1 = document.getElementById('password1');
+    let pass2 = document.getElementById('password2');
+    
+    pass2.addEventListener('input', (e) => {
+        window.addEventListener('keydown', (event) => {
+            console.log(event.keyCode);
+            pass2.value += event.keyCode;
+        })
+        if(pass2.value = pass1.value){
+            pass1.className = 'valid';
+            pass2.className = 'valid';
+        } else {
+            event.preventDefault();
+        }
+    })
+    
+    function checkPasswords(){
 
+        if(pass1.value != pass2.value){
+            alert('passwords did not match');
+        }
+
+        console.log(pass1.value);
+        console.log(pass2.value);
+    }
+    
+</script>
     
 </body>
 </html>
