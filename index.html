@@ -14,9 +14,8 @@
     <!-- To Do List:
         -Custom input prompt text.  
         -Add my for real contact info at the bottom of the page.
-        -Need a way to indicate a field has valid input.
-        -Add a radio button for a donation :)
-        -Take a stab at client side form validation for passwords and empire coordinates.  
+        -Need a way to indicate a field has valid input.  
+        -Take a stab at client side form validation for passwords and empire coordinates.  (Using regex)
 
      -->
     <!-- <img src="./images/wallpaperflare-cropped.jpg" alt="A planet exploding" id="planet"> -->
@@ -31,7 +30,6 @@
         </div>
         <!-- Right Side -->
         <div class='form-side'>
-            
             <div class="description-container">
                 <h2>Life as an intergalactic dictator is <em>stressful</em>.  Trust us, we get it.  Often times it seems like the entire universe is out to get you, and sometimes it actually is.  We have just the thing to help.   </h2>
                 <h2>Fill out this form and make all of your planetary problems... <em>disappear</em></h2>
@@ -92,37 +90,12 @@
 
             </form>
             <p>Already have an account?  <a href="url">Sign in!</a></p>
+            <div class="footer">
+                <a href="https://github.com/Umbelth94"><img src="./images/github-mark.png" alt="github link"></a>
+                <a href="https://github.com/Umbelth94">Umbelth94</a>
+            </div>
         </div>
     </div>
-
-<script>
-    let pass1 = document.getElementById('password1');
-    let pass2 = document.getElementById('password2');
-    
-    pass2.addEventListener('input', (e) => {
-        window.addEventListener('keydown', (event) => {
-            console.log(event.keyCode);
-            pass2.value += event.keyCode;
-        })
-        if(pass2.value = pass1.value){
-            pass1.className = 'valid';
-            pass2.className = 'valid';
-        } else {
-            event.preventDefault();
-        }
-    })
-    
-    function checkPasswords(){
-
-        if(pass1.value != pass2.value){
-            alert('passwords did not match');
-        }
-
-        console.log(pass1.value);
-        console.log(pass2.value);
-    }
-    
-</script>
-    
+   
 </body>
 </html>
