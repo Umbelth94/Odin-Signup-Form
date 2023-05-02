@@ -5,13 +5,13 @@ The Odin Project's page that provides instructions for this project can be found
 
 Please note that this website doesn't ACTUALLY provide a real service, and anything you type into the inputs will not actually be submitted anywhere.  
 
-##To Do List:
+## To Do List:
 In order to carry on with some of my personal objectives through the Odin Project, I decided to save learning regex for form validation for a later time, when I circle back on this project at a later date to clean it up a bit.  
 
--Create a mobile friendly format 
--Clean up the CSS and look for any redundancies.  
--Create custom input prompts for the inputs
--Use regex to create password validation that checks for matching passwords 
--Create a visual response to entering valid data, such as a green border around valid input entries.  
+- Create a mobile friendly format 
+- Clean up the CSS and look for any redundancies.  
+- Create custom input prompts for the inputs
+- Use regex to create password validation that checks for matching passwords 
+- Create a visual response to entering valid data, such as a green border around valid input entries.  
 
 
