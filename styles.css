@@ -18,13 +18,13 @@
 body,
 .picture-side{
     display:flex;
-    /* flex-flow: row wrap; */
 }
 
 
 
 .main-body{
     display:flex;
+    width:100%;
 }
 
 input,
